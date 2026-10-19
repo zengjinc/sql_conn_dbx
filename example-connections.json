@@ -1,0 +1,86 @@
+[
+  {
+    "name": "生产-MySQL",
+    "folder": "生产环境/MySQL",
+    "db_type": "mysql",
+    "host": "10.0.0.1",
+    "port": 3306,
+    "username": "root",
+    "password": "your_db_password",
+    "database": "production",
+    "color": "#FF0000",
+    "ssh": [
+      {
+        "host": "跳板机1",
+        "port": 22,
+        "user": "jumpuser",
+        "auth_method": "key",
+        "key_path": "C:\\Users\\admin\\.ssh\\id_rsa",
+        "key_passphrase": "",
+        "name": "第 1 层"
+      }
+    ]
+  },
+  {
+    "name": "测试-PostgreSQL",
+    "folder": "测试环境/PostgreSQL",
+    "db_type": "postgres",
+    "host": "192.168.1.100",
+    "port": 5432,
+    "username": "test_user",
+    "password": "your_db_password",
+    "database": "testdb",
+    "color": "#00FF00",
+    "ssh": [
+      {
+        "host": "堡垒机A",
+        "port": 2222,
+        "user": "admin",
+        "auth_method": "password",
+        "password": "your_ssh_password",
+        "name": "跳板"
+      }
+    ]
+  },
+  {
+    "name": "本地-SQLite",
+    "folder": "本地",
+    "db_type": "sqlite",
+    "host": "127.0.0.1",
+    "port": 0,
+    "username": "",
+    "password": "",
+    "database": "C:\\data\\local.db",
+    "ssh": []
+  },
+  {
+    "name": "开发-Redis",
+    "folder": "开发环境/Redis",
+    "db_type": "redis",
+    "host": "10.0.0.2",
+    "port": 6379,
+    "username": "",
+    "password": "your_db_password",
+    "database": "0",
+    "color": "#0000FF",
+    "ssh": [
+      {
+        "host": "跳板机1",
+        "port": 22,
+        "user": "jumpuser",
+        "auth_method": "key",
+        "key_path": "C:\\Users\\admin\\.ssh\\id_rsa",
+        "key_passphrase": "your_passphrase",
+        "name": "第 1 层"
+      },
+      {
+        "host": "内部跳板",
+        "port": 22,
+        "user": "inner",
+        "auth_method": "password",
+        "password": "your_ssh_password",
+        "name": "第 2 层"
+      }
+    ]
+  }
+]

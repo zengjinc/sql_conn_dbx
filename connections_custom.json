@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Dbx-SQLite",
+        "folder": "Dev",
+        "db_type": "sqlite",
+        "host": "C:\\Users\\<Username>\\AppData\\Roaming\\com.dbx.app\\dbx.db",
+        "port": 0,
+        "username": "",
+        "password": "",
+        "database": "",
+        "ssh": []
+    }
+]

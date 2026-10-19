@@ -1,0 +1,30 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+
+# Sensitive connection configs with real credentials
+connections.json
+export_connections.json
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment and private key files
+.env
+.env.*
+*.local
+*.pem
+*.key
+id_rsa*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
